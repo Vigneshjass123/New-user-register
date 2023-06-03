@@ -1,0 +1,50 @@
+﻿@model Register_and_login.Models.register1
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>register1</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.studntfname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.studntfname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.studentlname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.studentlname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.studentdept)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.studentdept)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stumobilenumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stumobilenumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.studentid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
